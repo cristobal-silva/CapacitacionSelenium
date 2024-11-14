@@ -9,6 +9,13 @@ import org.testng.Assert;
 
 public class DemoTsPage {
     private WebDriver driver;
+    
+    @FindBy(xpath = "//a[contains(@href,'key_presses')]")
+    private WebElement keyP;
+
+    @FindBy(id = "target")
+    private WebElement target;
+
 
     public DemoTsPage (WebDriver driver){
 
@@ -17,16 +24,22 @@ public class DemoTsPage {
 
     }
 
-    @FindBy(xpath ="//*[@id='APjFqb']")
-    private WebElement inputGoogle;
 
     public void abrirGoogle(){
-        driver.get("https://www.google.com");
+        driver.get("https://the-internet.herokuapp.com/");
     }
-    public void rellenarInputGoogle(String texto){
-        inputGoogle.clear();
-        inputGoogle.sendKeys(texto);
-        Assert.assertEquals(inputGoogle.getAttribute("value"), texto, "El texto en el campo de búsqueda no es correcto.");
+
+
+    public void clickKey(){
+
+        keyP.click();
 
     }
+
+    public void ingNumeros (String numeros){
+
+        target.sendKeys(numeros);
+
+    }
+
 }

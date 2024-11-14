@@ -64,7 +64,7 @@ public class DemoTsTest {
 
         // Realizar un SELECT en la base de datos después de abrir Google
         selectBaseDatos();
-        demoTsPage.rellenarInputGoogle(texto);
+//        demoTsPage.rellenarInputGoogle(texto);
         Thread.sleep(20000);
     }
 

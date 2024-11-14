@@ -2,7 +2,7 @@
 <suite name="Suite de Pruebas">
     <test name="Prueba Google">
         <classes>
-            <class name="tests.GoogleTest"/>
+            <class name="tests.HerokuTest"/>
         </classes>
     </test>
 </suite>
