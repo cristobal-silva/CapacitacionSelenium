@@ -2,10 +2,9 @@
 <suite name="Suite de Pruebas">
     <test name="Prueba Google">
 
-        <classes>
-            <class name="tests.DemoTsTest"/>
-            <parameter name="texto" value="Selenium" />
 
+        <classes>
+            <class name="tests.HerokuTest"/>
         </classes>
     </test>
 </suite>
