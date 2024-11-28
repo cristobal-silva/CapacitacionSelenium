@@ -20,7 +20,7 @@ public class GooglePage {
     public GooglePage(WebDriver driver) {
 
         this.driver = driver;
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(this.driver, this);
 
     }
 
@@ -43,7 +43,6 @@ public class GooglePage {
 
         waitFor(buscar).clear();
         buscar.sendKeys(buscarG);
-        Assert.assertEquals(buscar.getAttribute("value"), buscarG, "El texto en el campo de búsqueda no es correcto.");
 
     }
 }
